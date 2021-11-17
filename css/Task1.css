@@ -242,7 +242,7 @@ section:last-child {
 }
 
 .photo {
-  max-width: 461px;
+  width: 461px;
   height: 750px;
   background: url("../helosass/img/avatar.JPG") 0 0/cover no-repeat;
   border-radius: 7px;
