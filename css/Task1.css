@@ -304,6 +304,7 @@ body {
         -ms-flex-order: 2;
             order: 2;
     margin-bottom: 50px;
+    margin-top: 10px;
   }
 }
 
