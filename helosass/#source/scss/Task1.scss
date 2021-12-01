@@ -128,7 +128,6 @@ body{
         border-radius: 10px;
     }
     progress::-moz-progress-bar {
-        //background: -moz-linear-gradient(#4c4, #8f8 50%, #4c4);
         background-color: #FFFFFF;
         border-radius: 10px;}
     progress::-webkit-progress-value {
@@ -209,8 +208,6 @@ body{
     }
     .description{
         order: 3;
-        
-        
     }
     .description__row{
         display: flex;
@@ -236,16 +233,14 @@ body{
 @media (max-width:768px){
     .column{
         flex: 1 1 auto;
+        margin-bottom: 50px;
     }
-    .info{
-        
-    }
+    
     .intro__name{
         font-size: 35px;
         line-height: 43px;
     }
-    
-    
+
     .description__row{
         flex-direction: column;
         
@@ -253,16 +248,13 @@ body{
     .block{
         flex: 0 1 auto;
     }
-    
-    .column{
-        margin-bottom: 50px;
-    }
     .photo{
-        height: 300px;
+        height: 200px;
         max-width: 100%;
         margin-bottom: 50px;
     }
     .photo-text{
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+        font-size: 23px;
     }
 }
