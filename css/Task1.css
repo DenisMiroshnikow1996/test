@@ -199,6 +199,13 @@ body {
 .intro-scale progress {
   height: 7px;
   width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.intro-scale progress::-moz-progress-bar {
+  background-color: #FFFFFF;
+  border-radius: 10px;
 }
 
 .intro-scale progress::-webkit-progress-value {
@@ -208,11 +215,6 @@ body {
 
 .intro-scale progress::-webkit-progress-bar {
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
-}
-
-.intro-scale progress::-moz-progress-bar {
-  background: #FFFFFF;
   border-radius: 10px;
 }
 
@@ -279,6 +281,10 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+    margin-bottom: 50px;
+  }
+  .intro__name {
+    font-size: 43px;
   }
   .description {
     -webkit-box-ordinal-group: 4;
@@ -300,6 +306,8 @@ body {
     margin-right: 0;
   }
   .photo {
+    height: 600px;
+    max-width: 400px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -330,6 +338,14 @@ body {
             flex: 0 1 auto;
   }
   .column {
+    margin-bottom: 50px;
+  }
+  .photo {
+    height: 300px;
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .photo-text {
     margin-bottom: 50px;
   }
 }
