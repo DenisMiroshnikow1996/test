@@ -251,6 +251,9 @@ body {
 }
 
 .photo-text {
+  max-width: 460px;
+  max-height: 600px;
+  overflow: auto;
   padding: 0 50px;
   text-align: left;
   margin-bottom: 83px;
@@ -314,6 +317,9 @@ body {
     margin-bottom: 50px;
     margin-top: 10px;
   }
+  .photo-text {
+    max-height: 470px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -339,12 +345,14 @@ body {
             flex: 0 1 auto;
   }
   .photo {
-    height: 200px;
+    max-height: 200px;
     max-width: 100%;
     margin-bottom: 50px;
   }
   .photo-text {
     margin-bottom: 10px;
     font-size: 23px;
+    max-width: 747px;
+    max-height: 170px;
   }
 }
