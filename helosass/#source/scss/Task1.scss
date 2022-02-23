@@ -32,26 +32,30 @@ body{
     font-size: 15px;
     line-height: 25px;
     color: #FFFFFF;
-    position: relative
-}
+    
+}    
 
 
 .wrapper{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 100%;
-    max-width: 1500px;
     padding: 0 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
     align-items: center;
+    //align-content: center; 
+    //justify-content: space-around; 
+    overflow: auto; 
+    
     
 }
 
 
 .column{
+    width: 100%;
+    //align-items: center;
+    align-content: center; 
+    justify-content: space-around; 
+    
     margin-right: 50px;
     flex: 0 1 33.333%;
     &:last-child{
@@ -64,7 +68,7 @@ body{
     
 }
 
-.intro__name{
+.name{
     font-weight: 600;
     font-size: 75px;
     line-height: 75px;
@@ -82,7 +86,7 @@ body{
 .info{
     margin-bottom: 28px;
     flex: 0 1 50%;
-    .intro__row-block{
+    .row-block{
         opacity: 0.6;
     }
     
@@ -93,10 +97,10 @@ body{
     &:nth-child(4){
         margin-bottom: 0;
     }
-    .intro__row-img{
+    .img{
         margin-bottom: 7px;
     }
-    .intro__row-text{
+    .row-text{
         display: -webkit-box;
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;  
@@ -112,7 +116,7 @@ body{
     font-size: 30px;
     opacity: 0.9;
 }
-.intro-scale{
+.scale{
     margin-bottom: 17px;
     &:last-child{
         margin-bottom: 0;
@@ -144,10 +148,7 @@ body{
     
 
 
-.description{
-    
-    
-}
+
 .block{
     margin-bottom: 50px;
     &:last-child{
@@ -178,7 +179,6 @@ body{
 .photo-text {
     max-width: 460px;
     max-height: 600px;
-    overflow: auto;
     padding: 0 50px;
     text-align: left;
     margin-bottom: 83px;
@@ -197,17 +197,17 @@ body{
         flex-wrap: wrap;
         height: 100%;
         align-items: center;
-        
+        padding: 0 10px;
     }
     .column{
         flex-grow: 1;
-        
+        margin-bottom: 50px;
     }
     .intro{
         order: 1;
         margin-bottom: 50px;
     }
-    .intro__name{
+    .name{
         font-size: 43px;
     }
     .description{
@@ -239,32 +239,35 @@ body{
 @media (max-width:768px){
     .column{
         flex: 1 1 auto;
-        margin-bottom: 50px;
+        margin:0;
     }
     
     .intro__name{
         font-size: 35px;
         line-height: 43px;
     }
-
+    
     .description__row{
         flex-direction: column;
-        
     }
+    
     .block{
         flex: 0 1 auto;
+        margin-right: 0;
     }
     .photo{
-        
         max-height: 200px;
         max-width: 100%;
         margin-bottom: 50px;
         
     }
     .photo-text{
+        padding: 0 5px;
+        text-align: justify;
         margin-bottom: 10px;
-        font-size: 23px;
+        font-size: 17px;
+        line-height: 20px;
         max-width: 747px;
-        max-height: 170px;
+        max-height: 185px;
     }
 }
