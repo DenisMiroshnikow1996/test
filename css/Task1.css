@@ -103,7 +103,7 @@ body {
 
 .wrapper {
   padding: 0 10px;
-  width: 100%;
+  max-width: 1680px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -358,5 +358,8 @@ body {
     line-height: 20px;
     max-width: 747px;
     max-height: 185px;
+  }
+  .scale:last-child {
+    margin-bottom: 17px;
   }
 }
