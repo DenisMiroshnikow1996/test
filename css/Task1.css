@@ -112,6 +112,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow: auto;
+  margin: 0 auto;
 }
 
 .column {

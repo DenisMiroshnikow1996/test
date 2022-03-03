@@ -25,6 +25,7 @@
 
 //Контент
 body{
+    
     background: black;
     font-family: 'Inter';
     font-style: normal;
@@ -42,9 +43,8 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    //align-content: center; 
-    //justify-content: space-around; 
     overflow: auto; 
+    margin: 0 auto;
     
     
 }
